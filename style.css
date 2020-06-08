@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+.leftbar{
+    background-color: #ffe6cc;
+    height: 100vh;
+    width: 15%;
+    float: left;
+    font-size: 16px;
+    
+}
+.leftbar a{
+    font-size: 16 px;
+    height: 5vh;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 15% 0% 0% 0%;
+    transition-delay: 0.05s;
+}
+.open-right{
+    color: black;
+    text-align: center;
+    height: 5vh;
+    display: block;
+    text-align: center;
+    padding: 15% 0% 0% 0%;
+    cursor: pointer;
+    transition-delay: 0.01s;
+    width: 100%;
+}
+.leftbar a:hover, .open-right:hover{
+    background-color: #ffbf80;
+    transition-delay: 0.01s;
+}
+.contents {
+    display: none;
+    background-color: antiquewhite;
+    width: 100%;   
+    position: relative;
+    left: 100%;
+    bottom: 7.5%;
+}
+.contents a{
+    float: none;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color:  black;
+ 
+}
+.contents a:hover{
+    background-color: aquamarine;
+    transition-delay: 0.01s;
+}
+.open-right:hover + .contents{
+    display: block;
+    transition-delay: 0.01s;
+}
+.contents:hover{
+    display: block;
+    transition-delay: 0.01s;
+}
+
+
+.Name{
+    text-align: center;
+    width: 55%;
+    margin-left: 30%;
+}
