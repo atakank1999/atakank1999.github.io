@@ -1,14 +1,19 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
+  height: 100%;
+  font-size: 125%;
+}
+html {
+  height: 100%;
 }
 .leftbar {
   background-color: #ffe6cc;
-  height: 100vh;
+  min-height: 100%;
   width: 15%;
   float: left;
   overflow-wrap: break-word;
-  font-size: 18px;
+  
 }
 .leftbar a {
   font-size: 16 px;
@@ -73,18 +78,22 @@ body {
 
 .Links{
   display: block;
-  position: relative;
-  top: 65%;
+  position: absolute;
+  top: 75%;
 }
 .Links a:hover{
   background-color: inherit;
 }
 .Links a{
-  margin: 0px 0% 0px 17.5%;
-  display: inline;
+  position: absolute;
+  left: 1px;
+  display: block;
   color: black;
+  border: 1px solid black;
+  margin: 100px 100px 100px 100px;
+  
 }
 .Links h3{
-  position: relative;
-  left: 35%;
+  position: absolute;
+  left: 75%;
 }
