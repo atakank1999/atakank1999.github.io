@@ -7,7 +7,8 @@ body {
   height: 100vh;
   width: 15%;
   float: left;
-  font-size: 16px;
+  overflow-wrap: break-word;
+  font-size: 18px;
 }
 .leftbar a {
   font-size: 16 px;
@@ -69,22 +70,21 @@ body {
   width: 55%;
   margin-left: 30%;
 }
-.Links a{
-  text-decoration: none;
-  color: black;
-  margin: 4% 2%;
 
-}
 .Links{
-  width: 15%;
-  height: 10vh;
+  display: block;
   position: relative;
-  bottom: 10vh;
-  left: 5vh;
+  top: 65%;
+}
+.Links a:hover{
+  background-color: inherit;
+}
+.Links a{
+  margin: 0px 0% 0px 17.5%;
+  display: inline;
+  color: black;
 }
 .Links h3{
   position: relative;
-  left: 3.8vh;
-  top: 1.5vh;
-  
+  left: 35%;
 }
