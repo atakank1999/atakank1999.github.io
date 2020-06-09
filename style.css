@@ -72,16 +72,19 @@ body {
 .Links a{
   text-decoration: none;
   color: black;
-  margin: 0% 0;
+  margin: 0px 6px;
+
 }
 .Links{
   width: 15%;
   height: 10vh;
   position: relative;
-  bottom: 5vh;
+  bottom: 10vh;
   left: 5vh;
-  border: 1px solid black;
 }
 .Links h3{
+  position: relative;
+  left: 3.8vh;
+  top: 1.5vh;
   
 }
