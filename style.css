@@ -1,67 +1,90 @@
 body {
   text-align: center;
-  font-family: "Roboto";
-  padding: 0;
-  margin: 0;
 }
-#navbar {
-  background-color: #253b6e;
+html {
+  font-size: 1rem;
 }
-
-#navbar .container-fluid {
-  height: 15vh;
+.selector-for-some-widget {
+  box-sizing: content-box;
 }
-
+.navbar {
+  background-color: #222831;
+}
+#about-me {
+  background-color: #393e46;
+}
+#footer {
+  background-color: #0092ca;
+}
+.navbar {
+  padding: 3% 15%;
+}
 .navbar-brand {
-  font-weight: 900;
-  font-family: "Ubuntu";
-  font-size: 3.6vw;
+  font-size: 500%;
+  font-family: "Ubuntu", sans-serif;
 }
 .nav-item {
-  font-size: 1.8vw;
-  padding: 0 6vw 0 0;
+  font-size: 150%;
+  margin: 0 10%;
 }
 #about-me .container-fluid {
-  background-color: #1f5f8b;
-  height: 70vh;
-}
-#about-me h3 {
-  margin: auto;
-  font-size: 300%;
-  color: rgb(245, 238, 238);
-  text-align: left;
-  line-height: 1.5;
+  padding: 5% 15% 5% 10%;
 }
 #about-me img {
-  height: 30%;
+  max-width: 60%;
   border-radius: 100%;
-  margin: auto;
 }
-#about-me .col-lg-6{
-  padding: 5% 2%;
+#about-me p {
+  color: whitesmoke;
+  text-align: left;
+  font-size: 200%;
+}
+#about-me .col-lg-6 {
+  padding: 15% 0;
 }
 #footer .container-fluid {
-  background-color: #1891ac;
-  height: 15vh;
   padding: 5% 15%;
+  font-size: 400%;
 }
 #footer a {
-  color: whitesmoke;
-  font-size: 1.5vw;
+  color: #dfdfdf;
 }
-@media (max-width:1024px)
-{
-  #about-me img{
+#footer a:hover {
+  color: white;
+}
+
+@media (max-width: 988px) {
+  #about-me img {
     position: static;
   }
-  #navbar .container-fluid{
-    height: 25vh;
+  html {
+    font-size: 0.8rem;
   }
-  #about-me .container-fluid{
-    height: 50vh;
+  .navbar {
+    padding: 3% 5%;
   }
-  #footer .container-fluid{
-    height: 25vh;
+  #footer .container-fluid {
+    font-size: 300%;
+  }
+  #about-me p {
+  text-align: center;
+}
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 0.7rem;
+  }
+    #footer .container-fluid {
+      font-size: 250%;
+    }
   }
 
-}
+@media (max-width: 576px) {
+  html {
+    font-size: 0.5rem;
+  }
+    #footer .container-fluid {
+      font-size: 200%;
+    }
+  }
+
