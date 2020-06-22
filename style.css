@@ -33,18 +33,28 @@ html {
 #about-me img {
   max-width: 60%;
   border-radius: 100%;
+  float: right;
 }
-#about-me p {
+#about-me p{
   color: whitesmoke;
   text-align: left;
   font-size: 200%;
+  line-height: 2;
+  font-weight: 450;
+}
+#about-me h3{
+  color: whitesmoke;
+  text-align: left;
+  font-size: 400%;
+  font-weight: bold;
+  line-height: 2;
 }
 #about-me .col-lg-6 {
   padding: 15% 0;
 }
 #footer .container-fluid {
-  padding: 5% 15%;
-  font-size: 400%;
+  padding: 1% 15%;
+  font-size: 200%;
 }
 #footer a {
   color: #dfdfdf;
@@ -56,6 +66,7 @@ html {
 @media (max-width: 988px) {
   #about-me img {
     position: static;
+    float: none;
   }
   html {
     font-size: 0.8rem;
@@ -82,6 +93,14 @@ html {
 @media (max-width: 576px) {
   html {
     font-size: 0.5rem;
+  }
+    #footer .container-fluid {
+      font-size: 200%;
+    }
+  }
+  @media (max-width: 376px) {
+  html {
+    font-size: 0.45rem;
   }
     #footer .container-fluid {
       font-size: 200%;
