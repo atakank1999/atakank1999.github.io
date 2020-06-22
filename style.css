@@ -35,26 +35,24 @@ html {
   border-radius: 100%;
   float: right;
 }
-#about-me p{
+#about-me p {
   color: whitesmoke;
   text-align: left;
   font-size: 200%;
   line-height: 2;
-  font-weight: 450;
 }
-#about-me h3{
+#image {
+  padding: 3% 0;
+}
+#about-me h3 {
   color: whitesmoke;
   text-align: left;
   font-size: 400%;
-  font-weight: bold;
   line-height: 2;
 }
-#about-me .col-lg-6 {
-  padding: 15% 0;
-}
 #footer .container-fluid {
-  padding: 1% 15%;
-  font-size: 200%;
+  padding: 0.5% 15%;
+  font-size: 150%;
 }
 #footer a {
   color: #dfdfdf;
@@ -74,36 +72,26 @@ html {
   .navbar {
     padding: 3% 5%;
   }
-  #footer .container-fluid {
-    font-size: 300%;
-  }
   #about-me p {
-  text-align: center;
-}
+    text-align: center;
+  }
+  #about-me h3 {
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   html {
     font-size: 0.7rem;
   }
-    #footer .container-fluid {
-      font-size: 250%;
-    }
-  }
+}
 
 @media (max-width: 576px) {
   html {
     font-size: 0.5rem;
   }
-    #footer .container-fluid {
-      font-size: 200%;
-    }
-  }
-  @media (max-width: 376px) {
+}
+@media (max-width: 376px) {
   html {
     font-size: 0.45rem;
   }
-    #footer .container-fluid {
-      font-size: 200%;
-    }
-  }
-
+}
