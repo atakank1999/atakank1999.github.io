@@ -5,13 +5,19 @@ var gameStarted = false;
 var level = 0;
 
 $(".btn").click(function () {
-  var userChosenColour = $(this).attr("id");
-  userClickedPattern.push(userChosenColour);
-  animatePress(userChosenColour);
-  playSound(userChosenColour);
-  checkAnswer(userClickedPattern.length - 1);
+  if (gameStarted) {
+    var userChosenColour = $(this).attr("id");
+    userClickedPattern.push(userChosenColour);
+    animatePress(userChosenColour);
+    playSound(userChosenColour);
+    checkAnswer(userClickedPattern.length - 1);
+  } else {
+    nextSequence();
+    gameStarted = true;
+    $("#level-title").text("Level " + level);
+  }
 });
-$(document).keypress(function (event) {
+$(document).click(function (event) {
   if (!gameStarted) {
     nextSequence();
     gameStarted = true;
